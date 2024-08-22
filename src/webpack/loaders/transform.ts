@@ -27,6 +27,9 @@ export default async function transform(this: LoaderContext<{ unpluginName: stri
       getWatchFiles: () => {
         return this.getDependencies()
       },
+      getNativeContext: () => {
+        return this
+      },
     }, this._compilation), ...context },
     source,
     this.resource,

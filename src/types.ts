@@ -45,6 +45,7 @@ export interface UnpluginBuildContext {
   emitFile: (emittedFile: EmittedAsset) => void
   getWatchFiles: () => string[]
   parse: (input: string, options?: any) => AstNode
+  getNativeContext?: () => any
 }
 
 export interface UnpluginOptions {

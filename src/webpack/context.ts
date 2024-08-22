@@ -9,6 +9,7 @@ import type { UnpluginBuildContext, UnpluginContext, UnpluginMessage } from '../
 interface ContextOptions {
   addWatchFile: (file: string) => void
   getWatchFiles: () => string[]
+  getNativeContext?: () => any
 }
 
 export function contextOptionsFromCompilation(compilation: Compilation): ContextOptions {
@@ -58,6 +59,9 @@ export function createBuildContext(options: ContextOptions, compilation?: Compil
     },
     getWatchFiles() {
       return options.getWatchFiles()
+    },
+    getNativeContext() {
+      return options.getNativeContext?.()
     },
   }
 }

@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","sources":["../../src/msg.js","../../src/main.js"],"sourcesContent":["export default 'it is a msg -> through the load hook -> __unplugin__'\n","import msg1 from './msg'\n\nconsole.log(msg1)\n"],"names":[],"mappings":"AAAA,WAAA;;ACEA,OAAO,CAAC,GAAG,CAAC,IAAI"}

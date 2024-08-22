@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js.umd.js","sources":["../../src/main.js","../../src/msg.js"],"sourcesContent":["import msg1 from './msg'\n\nconsole.log(msg1)\n","export default 'it is a msg -> through the load hook -> __unplugin__'\n"],"names":[],"mappings":"2FAEA,QAAQ,ICFR,mEDEgB"}

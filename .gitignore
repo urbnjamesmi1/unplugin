@@ -3,7 +3,6 @@
 .idea
 *.log*
 coverage
-dist
 node_modules
 temp
 .eslintcache
